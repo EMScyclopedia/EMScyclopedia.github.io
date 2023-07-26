@@ -5,6 +5,8 @@
     <meta name="description" content="EMScyclopedia">
     <meta name="author" content="spaghety">
     <script src="./bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.23/angular.min.js"></script>
+    <script src="jquery.min.js"></script>
     <script src="index.js"></script>
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./bootstrap-5.3.0-dist/css/bootstrap.min.css" />
@@ -16,31 +18,48 @@
         </div>
         <div class="content">
             <div class="form">
+                <label class="vtLabel">Chief Complaint</label>
                 <form class="searchform">
-                    <input type="radio" class="btn-check cc" id="weak" name="cc" value="weak" autocomplete="off"><label class="btn btn-outline-primary" for="weak">Weakness</label>
-                    <input type="radio" class="btn-check cc" id="ams" name="cc" value="ams" autocomplete="off"><label class="btn btn-outline-primary" for="ams">AMS</label>
-                    <input type="radio" class="btn-check cc" id="abpain" name="cc" value="abpain" autocomplete="off"><label class="btn btn-outline-primary" for="abpain">Abdominal Pain</label>
-                    <input type="radio" class="btn-check cc" id="cir" name="cc" value="cir" autocomplete="off"><label class="btn btn-outline-primary" for="cir">Change in Responsiveness</label>
-                    <input type="radio" class="btn-check cc" id="bleeding" name="cc" value="bleeding" autocomplete="off"><label class="btn btn-outline-primary" for="bleeding">Bleeding</label>
-                    <input type="radio" class="btn-check cc" id="breathing" name="cc" value="breathing" autocomplete="off"><label class="btn btn-outline-primary" for="breathing">Breathing Difficulty</label>
-                    <input type="radio" class="btn-check cc" id="choking" name="cc" value="choking" autocomplete="off"><label class="btn btn-outline-primary" for="choking">Choking</label>
-                    <input type="radio" class="btn-check cc" id="diarrhea" name="cc" value="diarrhea" autocomplete="off"><label class="btn btn-outline-primary" for="diarrhea">Diarrhea</label>
-                    <input type="radio" class="btn-check cc" id="dizziness" name="cc" value="dizziness" autocomplete="off"><label class="btn btn-outline-primary" for="dizziness">Dizziness</label>
-                    <input type="radio" class="btn-check cc" id="wound" name="cc" value="wound" autocomplete="off"><label class="btn btn-outline-primary" for="wound">Wound</label>
-                    <input type="radio" class="btn-check cc" id="headache" name="cc" value="headache" autocomplete="off"><label class="btn btn-outline-primary" for="headache">Headache/blurred vision</label>
-                    <input type="radio" class="btn-check cc" id="malaise" name="cc" value="malaise" autocomplete="off"><label class="btn btn-outline-primary" for="malaise">Malaise</label>
-                    <input type="radio" class="btn-check cc" id="nausea" name="cc" value="nausea" autocomplete="off"><label class="btn btn-outline-primary" for="nausea">Nausea/vomiting</label>
-                    <input type="radio" class="btn-check cc" id="pain" name="cc" value="pain" autocomplete="off"><label class="btn btn-outline-primary" for="pain">Pain</label>
-                    <input type="radio" class="btn-check cc" id="palp" name="cc" value="palp" autocomplete="off"><label class="btn btn-outline-primary" for="palp">palp</label>
-                    <input type="radio" class="btn-check cc" id="rash" name="cc" value="rash" autocomplete="off"><label class="btn btn-outline-primary" for="rash">Rash/Itching</label>
-                    <input type="radio" class="btn-check cc" id="swelling" name="cc" value="swelling" autocomplete="off"><label class="btn btn-outline-primary" for="swelling">Swelling</label>
-                    <input type="radio" class="btn-check cc" id="mass" name="cc" value="mass" autocomplete="off"><label class="btn btn-outline-primary" for="mass">Mass/Lesion</label>
-                    <input type="radio" class="btn-check cc" id="fever" name="cc" value="fever" autocomplete="off"><label class="btn btn-outline-primary" for="fever">Fever</label>
-                    <input type="radio" class="btn-check cc" id="drainage" name="cc" value="drainage" autocomplete="off"><label class="btn btn-outline-primary" for="drainage">Drainage/Discharge</label>
-                    <input type="radio" class="btn-check cc" id="device" name="cc" value="device" autocomplete="off"><label class="btn btn-outline-primary" for="device">Medical Device Problem</label>
-                    <input type="radio" class="btn-check cc" id="seizure" name="cc" value="seizure" autocomplete="off"><label class="btn btn-outline-primary" for="seizure">Seizure-Like Symptoms</label>
-
-
+                    <div class="ccselect">
+                        <input type="radio" class="btn-check cc" id="weak" name="cc" value="weak" autocomplete="off"><label class="btn btn-outline-primary" for="weak">Weakness</label>
+                        <input type="radio" class="btn-check cc" id="ams" name="cc" value="ams" autocomplete="off"><label class="btn btn-outline-primary" for="ams">AMS</label>
+                        <input type="radio" class="btn-check cc" id="abpain" name="cc" value="abpain" autocomplete="off"><label class="btn btn-outline-primary" for="abpain">Abdominal Pain</label>
+                        <input type="radio" class="btn-check cc" id="cir" name="cc" value="cir" autocomplete="off"><label class="btn btn-outline-primary" for="cir">Change in Responsiveness</label>
+                        <input type="radio" class="btn-check cc" id="bleeding" name="cc" value="bleeding" autocomplete="off"><label class="btn btn-outline-primary" for="bleeding">Bleeding</label>
+                        <input type="radio" class="btn-check cc" id="breathing" name="cc" value="breathing" autocomplete="off"><label class="btn btn-outline-primary" for="breathing">Breathing Difficulty</label>
+                        <input type="radio" class="btn-check cc" id="choking" name="cc" value="choking" autocomplete="off"><label class="btn btn-outline-primary" for="choking">Choking</label>
+                        <input type="radio" class="btn-check cc" id="diarrhea" name="cc" value="diarrhea" autocomplete="off"><label class="btn btn-outline-primary" for="diarrhea">Diarrhea</label>
+                        <input type="radio" class="btn-check cc" id="dizziness" name="cc" value="dizziness" autocomplete="off"><label class="btn btn-outline-primary" for="dizziness">Dizziness</label>
+                        <input type="radio" class="btn-check cc" id="wound" name="cc" value="wound" autocomplete="off"><label class="btn btn-outline-primary" for="wound">Wound</label>
+                        <input type="radio" class="btn-check cc" id="headache" name="cc" value="headache" autocomplete="off"><label class="btn btn-outline-primary" for="headache">Headache/blurred vision</label>
+                        <input type="radio" class="btn-check cc" id="malaise" name="cc" value="malaise" autocomplete="off"><label class="btn btn-outline-primary" for="malaise">Malaise</label>
+                        <input type="radio" class="btn-check cc" id="nausea" name="cc" value="nausea" autocomplete="off"><label class="btn btn-outline-primary" for="nausea">Nausea/vomiting</label>
+                        <input type="radio" class="btn-check cc" id="pain" name="cc" value="pain" autocomplete="off"><label class="btn btn-outline-primary" for="pain">Pain</label>
+                        <input type="radio" class="btn-check cc" id="palp" name="cc" value="palp" autocomplete="off"><label class="btn btn-outline-primary" for="palp">Palpitations</label>
+                        <input type="radio" class="btn-check cc" id="rash" name="cc" value="rash" autocomplete="off"><label class="btn btn-outline-primary" for="rash">Rash/Itching</label>
+                        <input type="radio" class="btn-check cc" id="swelling" name="cc" value="swelling" autocomplete="off"><label class="btn btn-outline-primary" for="swelling">Swelling</label>
+                        <input type="radio" class="btn-check cc" id="mass" name="cc" value="mass" autocomplete="off"><label class="btn btn-outline-primary" for="mass">Mass/Lesion</label>
+                        <input type="radio" class="btn-check cc" id="fever" name="cc" value="fever" autocomplete="off"><label class="btn btn-outline-primary" for="fever">Fever</label>
+                        <input type="radio" class="btn-check cc" id="drainage" name="cc" value="drainage" autocomplete="off"><label class="btn btn-outline-primary" for="drainage">Drainage/Discharge</label>
+                        <input type="radio" class="btn-check cc" id="device" name="cc" value="device" autocomplete="off"><label class="btn btn-outline-primary" for="device">Medical Device Problem</label>
+                        <input type="radio" class="btn-check cc" id="seizure" name="cc" value="seizure" autocomplete="off"><label class="btn btn-outline-primary" for="seizure">Seizure-Like Symptoms</label>
+                    </div>
+                    <div class="row vtInRw">
+                        <div class="col bpinput">
+                            <label class="vtLabel">Blood Pressure</label>
+                            <input name="sysbp" type="number" placeholder="000" class="intInp" onkeypress="return isNumberKey(event)" >
+                            <hr/>
+                            <input name="dysbp" type="number" placeholder="000" class="intInp" onkeypress="return isNumberKey(event)" >
+                        </div>
+                        <div class="col">
+                            <div class="vtLabel">Heart Rate</div>
+                            <input name="hr" type="number" placeholder="000" class="intInp" onkeypress="return isNumberKey(event)" >
+                        </div>
+                        <div class="col">
+                            <div class="vtLabel">SpO2</div>
+                            <input name="SpO2" type="number" placeholder="000" class="intInp" onkeypress="return isNumberKey(event)" >
+                        </div>
+                    </div>
                 </form>
             </div>
             <h2>Home</h2>
