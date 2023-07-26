@@ -1,0 +1,16 @@
+{
+    "treatment" : {
+        "desc" : "Description of treatment modality",
+        "indc" : {
+            "desc" : "Description of indications and contraindications",
+            "mxsbp" : "Maximum systolic blood pressure",
+            "mnsbp" : "Minimum systolic blood pressure",
+            "mxhr" : "Maximum heart rate",
+            "mnhr" : "Minimum heart rate",
+            "mnbgl" : "Minimum blood glucose level",
+            "mxbgl" : "Maximum blood glucose level",
+            "mxtemp" : "Maximum temperature",
+            "mntemp" : "Minimum temperature"
+        }
+    }
+}

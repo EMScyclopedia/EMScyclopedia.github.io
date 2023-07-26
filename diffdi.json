@@ -1,0 +1,18 @@
+{
+    "_example-condition": {
+        "pres" : "Description of patient presentation",
+        "desc" : "Description of condition",
+        "vitals" : {
+            "sbp" : "Typical systolic blood pressure of a patient with this condition",
+            "dbp" : "Typical diastolic blood pressure of a patient with this condition",
+            "hr" : "Typical heart rate of a patient with this condition",
+            "rr" : "Typical respiratory rate of a patient with this condition",
+            "02" : "Typical oxygen saturation of a patient with this condition",
+            "temp" : "Typical temperature of a patient with this condition",
+            "gcs" : "Typical Glasgow Coma Scale of a patient with this condition",
+            "bgl" : "Typical blood glucose level of a patient with this condition"
+        },
+        "pathophys" : "Description of pathophysiology of this condition",
+        "treatment" : ["option1", "option2", "option3", "etc. List all treatment options here as listed in treatment.json"]
+    }
+}
