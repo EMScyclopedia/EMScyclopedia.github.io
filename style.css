@@ -7,4 +7,23 @@
 }
 .vtInRw {
     font-size: 25px;
+    align-content:center;
+}
+.container {
+    padding-bottom: 25px;
+}
+.content {
+    border: 2px solid black;
+}
+#searchform {
+    background-color: rgb(223, 223, 223);
+    padding: 25px;
+}
+.searchresults {
+    margin: 10px;
+}
+.footer {
+    background-color: rgb(49, 49, 49);
+    padding: 25px;
+    color: white;
 }

@@ -1,7 +1,9 @@
-{
-    "treatment" : {
+[
+    {
+        "name" : "example",
         "desc" : "Description of treatment modality",
         "indc" : {
+            "cc" : "Chief Complaint that may indicate this treatment",
             "desc" : "Description of indications and contraindications",
             "mxsbp" : "Maximum systolic blood pressure",
             "mnsbp" : "Minimum systolic blood pressure",
@@ -12,5 +14,13 @@
             "mxtemp" : "Maximum temperature",
             "mntemp" : "Minimum temperature"
         }
+    },
+    {
+        "name" : "aspirin",
+        "desc" : "Used to thin blood and reduce clotting. This can relieve pain and pressure in the chest.",
+        "indc" : {
+            "cc" : 23,
+            "desc" : "Use caution when administering to women who are pregnant or breastfeeding or children under 12."
+        }
     }
-}
+]
