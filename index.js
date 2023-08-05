@@ -19,7 +19,7 @@ function refresh(){
     var hr = $("#hr").val();
     var SpO2 = $("#SpO2").val();
     $.getJSON('./treatment.json', function(data) {
-        $.each(data.treatment, function(i, f) {
+        $.each(data, function(i, f) {
             if (f.indc.cc == cc) {
                 results.push(f);
             }
