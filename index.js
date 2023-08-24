@@ -21,13 +21,13 @@ function refresh(){
     var SpO2 = $("#SpO2").val();
     $.getJSON('./treatment.json', function(data) {
         $.each(data, function(i, f) {
-            if (f.indc.cc == cc) {
+            if (f.indc.cc.contains(cc)) {
                 results.push(f);
             }
         });
         $.each(results, function(i, f) {
             var resultrow = '<div class="row result">\
-            <div class="col-3"><h1>'+f.name+'</h1></div>\
+            <div class="col-3"><h1>'+f.name+'<p style="font-size: 15px;">'+f.brandnames+'</p></h1></div>\
             <div class="col-4">'+f.desc+'</div>\
             <div class="col-4">'+f.indc.desc+'</div></div>';
             $("#searchresults").append(resultrow);
