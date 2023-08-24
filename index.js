@@ -30,7 +30,7 @@ function refresh(){
             <div class="col-3"><h1>'+f.name+'</h1></div>\
             <div class="col-4">'+f.desc+'</div>\
             <div class="col-4">'+f.indc.desc+'</div></div>';
-            $("#searchresults").append()
+            $("#searchresults").append(resultrow);
         });
     });
 }
