@@ -45,9 +45,9 @@
         }
     },
     {
-        "name" : "Bandages, Tourniquets and Hemostatic agents",
+        "name" : "Bleeding Control",
         "brandnames" : "QuikClot, Combat Gauze, Israeli Bandage, CAT, SOF-T",
-        "desc" : "Comes in rolled, gauze, or powdered form. Used to stop bleeding.",
+        "desc" : "Bandages, Tourniquets and Hemostatic agents. Come in rolled, gauze, or powdered form. Used to stop bleeding.",
         "indc" : {
             "cc" : [5],
             "desc" : "Indicated only for patients with major uncontrolled bleeding. Use caution and moderation when using powdered hemostatic agents. Tourniquets may cause damage to the distal limb if left on for >2 hours."

@@ -13,7 +13,7 @@ function isNumberKey(evt) {
 function refresh(){
     $("#searchresults").empty();
     var results = [];
-    var cc = $('input[name="cc"]:checked').val();
+    var cc = Number($('input[name="cc"]:checked').val());
     var pAge = $("input[name=pAge]").val();
     var sysbp = $("#sysbp").val();
     var dysbp = $("#dysbp").val();
