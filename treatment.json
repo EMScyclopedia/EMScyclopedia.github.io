@@ -1,26 +1,65 @@
 [
     {
-        "name" : "example",
-        "desc" : "Description of treatment modality",
+        "name" : "aspirin",
+        "brandnames" : "Bayer Asprin, Ecotrin, Aspergum, Ascriptin",
+        "desc" : "A commonly found OTC medication. Commonly found as a pill or chewable.",
         "indc" : {
-            "cc" : "Chief Complaint that may indicate this treatment",
-            "desc" : "Description of indications and contraindications",
-            "mxsbp" : "Maximum systolic blood pressure",
-            "mnsbp" : "Minimum systolic blood pressure",
-            "mxhr" : "Maximum heart rate",
-            "mnhr" : "Minimum heart rate",
-            "mnbgl" : "Minimum blood glucose level",
-            "mxbgl" : "Maximum blood glucose level",
-            "mxtemp" : "Maximum temperature",
-            "mntemp" : "Minimum temperature"
+            "cc" : [23],
+            "desc" : "Asprin is indicated for patients with chest pain. Contraindicated for patients with a GI bleed, coagulation disorder or G6PD deficiency. Use caution when administering to women who are pregnant or breastfeeding or children under 12."
         }
     },
     {
-        "name" : "aspirin",
-        "desc" : "Used to thin blood and reduce clotting. This can relieve pain and pressure in the chest.",
+        "name" : "Topical Hydrocortisone",
+        "brandnames" : "Cortef, Cortaid, Cortizone-10",
+        "desc" : "A common OTC topical steroid often found in squeeze tubes or spray bottles.",
         "indc" : {
-            "cc" : 23,
-            "desc" : "Use caution when administering to women who are pregnant or breastfeeding or children under 12."
+            "cc" : [16],
+            "desc" : "Indicated for patients with itching and rashing, particularly due to insect bites. For external use only. Do not cover with a bandage unless directed by a doctor."
+        }
+    },
+    {
+        "name" : "Albuterol",
+        "brandnames" : "Proventil, Ventolin",
+        "desc" : "Most commonly administered via MDI or nebulizer. May be used for patients with asthma or COPD.",
+        "indc" : {
+            "cc" : [6],
+            "desc" : "Indicated for patients with bronchospasms. Contraindicated for patients with a history of hypersensitivity to albuterol."
+        }
+    },
+    {
+        "name": "Ondansetron",
+        "brandnames": "Zofran",
+        "desc": "Can be administered via IV or PO. Used to treat nausea and vomiting.",
+        "indc": {
+            "cc" : [13],
+            "desc" : "Indicated for patients with nausea or vomiting, particularly those due to surgery or chemotherapy. Contraindicated for patients with long QT syndrome, Apomorphine, Cisapride, Dofetilide, Dronedarone, Levoketocanazole, pimozide, thioridazine."
+        }
+    },
+    {
+        "name" : "Oral Fluids & Electrolytes",
+        "brandnames" : "Pedialyte, Gatorade, Powerade",
+        "desc" : "Often come in powder form and are mixed with water. Used to treat dehydration.",
+        "indc": {
+            "cc" : [8, 9, 11, 12],
+            "desc" : "Indicated for patients with dehydration. Contraindicated for patients with GI or airway obstructions or issues and unconcious patients."
+        }
+    },
+    {
+        "name" : "Bandages, Tourniquets and Hemostatic agents",
+        "brandnames" : "QuikClot, Combat Gauze, Israeli Bandage, CAT, SOF-T",
+        "desc" : "Comes in rolled, gauze, or powdered form. Used to stop bleeding.",
+        "indc" : {
+            "cc" : [5],
+            "desc" : "Indicated only for patients with major uncontrolled bleeding. Use caution and moderation when using powdered hemostatic agents. Tourniquets may cause damage to the distal limb if left on for >2 hours."
+        }
+    },
+    {
+        "name" : "Oral glucose",
+        "brandnames" : "Glutose, Insta-Glucose",
+        "desc" : "Comes in gel or liquid form. Candy may also be an acceptable substitute.",
+        "indc" : {
+            "cc" : [1, 2],
+            "desc" : "Indicate for patients with hypoglycemia. Contraindicated for patients who are unconcious or unable to swallow. Use caution when administering to patients with a history of diabetes or hyperglycemia."
         }
     }
 ]

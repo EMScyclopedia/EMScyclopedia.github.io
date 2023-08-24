@@ -11,8 +11,9 @@ function isNumberKey(evt) {
     return true;
 }
 function refresh(){
+    $("#searchresults").empty();
     var results = [];
-    var cc = Number($("input[name='cc']").val());
+    var cc = $('input[name="cc"]:checked').val();
     var pAge = $("input[name=pAge]").val();
     var sysbp = $("#sysbp").val();
     var dysbp = $("#dysbp").val();
@@ -24,7 +25,13 @@ function refresh(){
                 results.push(f);
             }
         });
-        console.log(results);
+        $.each(results, function(i, f) {
+            var resultrow = '<div class="row result">\
+            <div class="col-3"><h1>'+f.name+'<p style="font-size: 15px;">'+f.brandnames+'</p></h1></div>\
+            <div class="col-4">'+f.desc+'</div>\
+            <div class="col-4">'+f.indc.desc+'</div></div>';
+            $("#searchresults").append(resultrow);
+        });
     });
 }
 function main(){
