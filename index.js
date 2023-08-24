@@ -12,7 +12,7 @@ function isNumberKey(evt) {
 }
 function refresh(){
     var results = [];
-    var cc = $("input[name='cc']").val();
+    var cc = Number($("input[name='cc']").val());
     var pAge = $("input[name=pAge]").val();
     var sysbp = $("#sysbp").val();
     var dysbp = $("#dysbp").val();
@@ -20,7 +20,7 @@ function refresh(){
     var SpO2 = $("#SpO2").val();
     $.getJSON('./treatment.json', function(data) {
         $.each(data, function(i, f) {
-            if (f.indc.cc == cc) {
+            if (f.indc.cc.includes(cc)) {
                 results.push(f);
             }
         });
