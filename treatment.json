@@ -36,11 +36,12 @@
         }
     },
     {
-        "name" : "Oral Fluids & Electrolytes",
-        "brandnames" : "Pedialyte, Gatorade, Powerade",
-        "desc" : "Often come in powder form and are mixed with water. Used to treat dehydration.",
+        "name" : "Rehydration",
+        "brandnames" : "Pedialyte, Gatorade, Powerade, saline",
+        "desc" : "Either as a powdered drink mixed with water, a premixed drink, normal saline, or simply water. Used to treat dehydration.",
         "indc": {
             "cc" : [8, 9, 11, 12],
+            "mxsbp" : 90,
             "desc" : "Indicated for patients with dehydration. Contraindicated for patients with GI or airway obstructions or issues and unconcious patients."
         }
     },
@@ -50,6 +51,7 @@
         "desc" : "Bandages, Tourniquets and Hemostatic agents. Come in rolled, gauze, or powdered form. Used to stop bleeding.",
         "indc" : {
             "cc" : [5],
+            "mxsbp" : 90,
             "desc" : "Indicated only for patients with major uncontrolled bleeding. Use caution and moderation when using powdered hemostatic agents. Tourniquets may cause damage to the distal limb if left on for >2 hours."
         }
     },
@@ -60,6 +62,72 @@
         "indc" : {
             "cc" : [1, 2],
             "desc" : "Indicate for patients with hypoglycemia. Contraindicated for patients who are unconcious or unable to swallow. Use caution when administering to patients with a history of diabetes or hyperglycemia."
+        }
+    },
+    {
+        "name" : "Lung Sounds",
+        "brandnames" : "Stethoscope",
+        "desc" : "Listen for wheezing, crackles, rhonchi, stridor, and diminished/unilateral breath sounds.",
+        "indc" : {
+            "cc" : [6],
+            "mxspo2" : 95,
+            "desc" : "Used to determine source of respiratory distress."
+        }
+    },
+    {
+        "name" : "Backboard",
+        "brandnames" : "KED, Kendrick Extrication Device, Long Spine Board",
+        "desc" : "Used to immobilize patients with suspected spinal injuries.",
+        "indc" : {
+            "cc" : [10],
+            "desc" : "Indicated for head injuries and suspected spinal injuries."
+        }
+    },
+    {
+        "name" : "Bag Valve Mask",
+        "brandnames" : "BVM, Ambu Bag",
+        "desc" : "Used to ventilate patients who are not breathing adequately.",
+        "indc" : {
+            "cc" : [6, 4],
+            "desc" : "Indicated for patients who are not breathing on their own or are not breathing adequately. Contraindicated for patients with an airway obstruction."
+        }
+    },
+    {
+        "name" : "Oxygen",
+        "desc" : "Comes in a tank or concentrator. Used to treat hypoxia.",
+        "indc" : {
+            "cc" : [6, 5],
+            "mxspo2" : 95,
+            "mxsbp" : 90,
+            "desc" : "Indicated for patients with severe blood loss or hypoxia."
+        }
+    },
+    {
+        "name" : "CPR",
+        "brandnames" : "Chest compressions",
+        "desc" : "Used to circulate blood in patients who are not breathing.",
+        "indc" : {
+            "cc" : [4],
+            "mxhr" : 0,
+            "desc" : "indicated for patients who are pulseless and apneic."
+        }
+    },
+    {
+        "name" : "Oral antihystamine",
+        "brandnames" : "Benadryl, Diphenhydramine",
+        "desc" : "An oral medication used to treat non anaphylactic allergic reactions.",
+        "indc" : {
+            "cc" : [16, 17],
+            "desc" : "Indicated for patients with a history of allergic reactions who have responded well to oral antihystamines. Contraindicated for patients who cannot swallow."
+        }
+    },
+    {
+        "namem" : "Epinephrine",
+        "brandnames" : "EpiPen, Adrenaclick",
+        "desc" : "Artificial adrenaline. Used with an autoinjector to treat anaphylactic shock or administered via IV to treat cardiac arrest.",
+        "indc" : {
+            "cc" : [17],
+            "desc" : "Indicated for patients with anaphylactic shock. Contraindicated for patients with a history of hypersensitivity to epinephrine or patients with a history of heart disease."
         }
     }
 ]

@@ -15,13 +15,13 @@ function refresh(){
     var results = [];
     var cc = Number($('input[name="cc"]:checked').val());
     var pAge = $("input[name=pAge]").val();
-    var sysbp = $("#sysbp").val();
-    var dysbp = $("#dysbp").val();
-    var hr = $("#hr").val();
-    var SpO2 = $("#SpO2").val();
+    var sysbp = $("#sysbp").val() || 120;
+    var dysbp = $("#dysbp").val() || 80;
+    var hr = $("#hr").val() || 80;
+    var SpO2 = $("#SpO2").val() || 98;
     $.getJSON('./treatment.json', function(data) {
         $.each(data, function(i, f) {
-            if (f.indc.cc.includes(cc)) {
+            if (f.indc.cc.includes(cc) || f.indc.mxsbp >= sysbp || f.indc.mxhr >= hr || f.indc.mxspo2 >= SpO2 || f.indc.mnsbp <= sysbp) {
                 results.push(f);
             }
         });

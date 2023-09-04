@@ -5,6 +5,13 @@
 .ccselect {
     margin: 25px;
 }
+.result {
+    padding: 10px;
+    border-bottom: 1px solid rgb(130, 130, 130);
+}
+.result:hover {
+    background-color: rgb(223, 223, 223);
+}
 .vtInRw {
     font-size: 25px;
     align-content:center;
