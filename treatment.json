@@ -1,133 +1,105 @@
 [
     {
-        "name" : "aspirin",
-        "brandnames" : "Bayer Asprin, Ecotrin, Aspergum, Ascriptin",
-        "desc" : "A commonly found OTC medication. Commonly found as a pill or chewable.",
+        "name" : "Heart Failure",
+        "brandnames" : "Shortness of breath, fatigue, weakness, swelling in legs, ankles, feet, or abdomen, rapid or irregular heartbeat, reduced ability to exercise, persistent cough or wheezing with white or pink blood-tinged phlegm, swelling of abdomen",
+        "desc" : "Heart Failure is a generalized term for when the heart is unable to pump enough blood  to meet the body's needs. Can be caused by coronary artery disease, heart attack, high blood pressure, heart valve disease, cardiomyopathy, congenital heart defects, heart arrhythmias, and other conditions.",
         "indc" : {
             "cc" : [23],
-            "desc" : "Asprin is indicated for patients with chest pain. Contraindicated for patients with a GI bleed, coagulation disorder or G6PD deficiency. Use caution when administering to women who are pregnant or breastfeeding or children under 12."
+            "desc" : "Asprin is generally indicated for patients with heart problems. Contraindicated for patients with a GI bleed, coagulation disorder or G6PD deficiency. Use caution when administering to women who are pregnant or breastfeeding or children under 12."
         }
     },
     {
-        "name" : "Topical Hydrocortisone",
-        "brandnames" : "Cortef, Cortaid, Cortizone-10",
-        "desc" : "A common OTC topical steroid often found in squeeze tubes or spray bottles.",
+        "name" : "Insect bite/sting",
+        "brandnames" : "Itching, swelling, redness, pain, warmth, hives, rash, fever, joint pain, swollen lymph nodes.",
+        "desc" : "A bite or sting from an insect. Can be caused by bees, wasps, hornets, yellow jackets, fire ants, or scorpions.",
         "indc" : {
             "cc" : [16],
-            "desc" : "Indicated for patients with itching and rashing, particularly due to insect bites. For external use only. Do not cover with a bandage unless directed by a doctor."
+            "desc" : "Usually only topical hydrocortisone is needed. If the patient is having an allergic reaction, administer epinephrine."
         }
     },
     {
-        "name" : "Albuterol",
-        "brandnames" : "Proventil, Ventolin",
-        "desc" : "Most commonly administered via MDI or nebulizer. May be used for patients with asthma or COPD.",
+        "name" : "Asthma",
+        "brandnames" : "Difficulty breathing, wheezing, coughing, chest tightness, cyanosis, tachypnea, tachycardia.",
+        "desc" : "A condition in which the airways narrow and swell and produce extra mucus. Can be caused by allergies, exercise, cold air, or stress.",
         "indc" : {
             "cc" : [6],
-            "desc" : "Indicated for patients with bronchospasms. Contraindicated for patients with a history of hypersensitivity to albuterol."
+            "desc" : "Interventions include oxygen, albuterol, and monitoring of vitals."
         }
     },
     {
-        "name": "Ondansetron",
-        "brandnames": "Zofran",
-        "desc": "Can be administered via IV or PO. Used to treat nausea and vomiting.",
+        "name": "Poisoning",
+        "brandnames": "Nausea, vomiting, diarrhea, sweating, drooling, seizures, dizziness, drowsiness, confusion, anxiety, agitation, hallucinations.",
+        "desc": "Described as the ingestion of toxic substances. Can be caused by household cleaners, plants, pesticides, chemicals, or drugs.",
         "indc": {
             "cc" : [13],
-            "desc" : "Indicated for patients with nausea or vomiting, particularly those due to surgery or chemotherapy. Contraindicated for patients with long QT syndrome, Apomorphine, Cisapride, Dofetilide, Dronedarone, Levoketocanazole, pimozide, thioridazine."
+            "desc" : "Interventions include activated charcoal, oxygen, and monitoring of vitals."
         }
     },
     {
-        "name" : "Rehydration",
-        "brandnames" : "Pedialyte, Gatorade, Powerade, saline",
-        "desc" : "Either as a powdered drink mixed with water, a premixed drink, normal saline, or simply water. Used to treat dehydration.",
+        "name" : "Dehydration",
+        "brandnames" : "Lightheadedness, dizziness, dry mouth, decreased urine output, dark urine, headache, muscle cramps, dry skin.",
+        "desc" : "A condition in which the body loses more fluids than it takes in. Can be caused by vomiting, diarrhea, fever, excessive sweating, or burns.",
         "indc": {
             "cc" : [8, 9, 11, 12],
             "mxsbp" : 90,
-            "desc" : "Indicated for patients with dehydration. Contraindicated for patients with GI or airway obstructions or issues and unconcious patients."
+            "desc" :"Interventions include rehydration and monitoring of vitals."
         }
     },
     {
-        "name" : "Bleeding Control",
-        "brandnames" : "QuikClot, Combat Gauze, Israeli Bandage, CAT, SOF-T",
-        "desc" : "Bandages, Tourniquets and Hemostatic agents. Come in rolled, gauze, or powdered form. Used to stop bleeding.",
+        "name" : "Hypovolemic shock",
+        "brandnames" : "Cool, clammy skin, rapid breathing, rapid pulse, weakness, confusion, nausea, vomiting, fainting.",
+        "desc" : "In hypovolemic shock, the body has lost blood to the point of being unable to perfuse the body tissues.",
         "indc" : {
             "cc" : [5],
             "mxsbp" : 90,
-            "desc" : "Indicated only for patients with major uncontrolled bleeding. Use caution and moderation when using powdered hemostatic agents. Tourniquets may cause damage to the distal limb if left on for >2 hours."
+            "desc" : "After controlling all bleeding possible, keep the patient warm with a blanket, elevate their legs, administer IV saline, and monitor vitals. Do not give them food or water."
         }
     },
     {
-        "name" : "Oral glucose",
-        "brandnames" : "Glutose, Insta-Glucose",
-        "desc" : "Comes in gel or liquid form. Candy may also be an acceptable substitute.",
+        "name" : "Hypoglycemia",
+        "brandnames" : "Low blood sugar, weakness, fatigue, shakiness, hunger, anxiety, irritability.",
+        "desc" : "A condition in which the blood sugar is too low. Can be caused by skipping meals, drinking alcohol, or taking too much insulin.",
         "indc" : {
             "cc" : [1, 2],
-            "desc" : "Indicate for patients with hypoglycemia. Contraindicated for patients who are unconcious or unable to swallow. Use caution when administering to patients with a history of diabetes or hyperglycemia."
+            "desc" : "Oral glucose should be administered to concious patients. Glucagon may also be administered as an injection."
         }
     },
     {
-        "name" : "Lung Sounds",
-        "brandnames" : "Stethoscope",
-        "desc" : "Listen for wheezing, crackles, rhonchi, stridor, and diminished/unilateral breath sounds.",
+        "name" : "Chronic Obstructive Pulmonary Disease",
+        "brandnames" : "Shortness of breath, wheezing, chest tightness, chronic cough, frequent respiratory infections, lack of energy.",
+        "desc" : "A group of lung diseases that block airflow and make it difficult to breathe. Can be caused by smoking, long term exposure to air pollution, or genetic factors.",
         "indc" : {
             "cc" : [6],
             "mxspo2" : 95,
-            "desc" : "Used to determine source of respiratory distress."
+            "desc" : "Interventions include oxygen via CPAP and monitoring of vitals."
         }
     },
     {
-        "name" : "Backboard",
-        "brandnames" : "KED, Kendrick Extrication Device, Long Spine Board",
-        "desc" : "Used to immobilize patients with suspected spinal injuries.",
+        "name" : "Spinal Injury",
+        "brandnames" : "Numbness, tingling, paralysis, deformity, pain.",
+        "desc" : "Any disruption of the spinal cord. Can be caused by trauma, disease, or degeneration.",
         "indc" : {
             "cc" : [10],
-            "desc" : "Indicated for head injuries and suspected spinal injuries."
+            "desc" : "Spinal immobilization is the primary intervention to be considered for spinal injuries."
         }
     },
     {
-        "name" : "Bag Valve Mask",
-        "brandnames" : "BVM, Ambu Bag",
-        "desc" : "Used to ventilate patients who are not breathing adequately.",
-        "indc" : {
-            "cc" : [6, 4],
-            "desc" : "Indicated for patients who are not breathing on their own or are not breathing adequately. Contraindicated for patients with an airway obstruction."
-        }
-    },
-    {
-        "name" : "Oxygen",
-        "desc" : "Comes in a tank or concentrator. Used to treat hypoxia.",
-        "indc" : {
-            "cc" : [6, 5],
-            "mxspo2" : 95,
-            "mxsbp" : 90,
-            "desc" : "Indicated for patients with severe blood loss or hypoxia."
-        }
-    },
-    {
-        "name" : "CPR",
-        "brandnames" : "Chest compressions",
-        "desc" : "Used to circulate blood in patients who are not breathing.",
+        "name" : "Cardiac Arrest",
+        "brandnames" : "Unresponsiveness, no breathing, no pulse.",
+        "desc" : "When the heart stops beating.",
         "indc" : {
             "cc" : [4],
             "mxhr" : 0,
-            "desc" : "indicated for patients who are pulseless and apneic."
+            "desc" : "Begin CPR immediately, use an AED quickly after beginning CPR."
         }
     },
     {
-        "name" : "Oral antihystamine",
-        "brandnames" : "Benadryl, Diphenhydramine",
-        "desc" : "An oral medication used to treat non anaphylactic allergic reactions.",
+        "name" : "allergic reaction",
+        "brandnames" : "Swelling, difficulty breathing, rash, itching, nausea.",
+        "desc" : "When the body's immune system overreacts to a foreign substance.",
         "indc" : {
             "cc" : [16, 17],
-            "desc" : "Indicated for patients with a history of allergic reactions who have responded well to oral antihystamines. Contraindicated for patients who cannot swallow."
-        }
-    },
-    {
-        "namem" : "Epinephrine",
-        "brandnames" : "EpiPen, Adrenaclick",
-        "desc" : "Artificial adrenaline. Used with an autoinjector to treat anaphylactic shock or administered via IV to treat cardiac arrest.",
-        "indc" : {
-            "cc" : [17],
-            "desc" : "Indicated for patients with anaphylactic shock. Contraindicated for patients with a history of hypersensitivity to epinephrine or patients with a history of heart disease."
+            "desc" : "Benadryl is indicated for acute but mild reactions but any anaphylactic reaction should be treated with epinephrine."
         }
     }
 ]
